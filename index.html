@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game of 7</title>
+    <link rel ="icon" type="image/x-icon" href ="epicsword.jpg">
+    <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
     
+    <div class="menu_icon_box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>  
+    <div class ="container">
+        
+        <div class="box">
+       
+            <nav>
+                <ul>
+                    
+                    <a href="index.html"><img src="epicsword.jpg" alt="Game of 7"></a>
+                    <h1>Game of 7</h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="vocations.html">Vocations</a></li>
+                    <li><a href="monsters.html">Monsters</a></li>
+                    <li><a href="quests.html">Quests</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+            <div class = "content">        
+<div class ="title">
+    <span>⭐ News ⭐</span>
+</div>
+<div class ="news">
+<div class ="date">14.1.2025 - Welcome!</div>
+    
+           
+            
+            
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti 
+            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+             deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+              possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+               aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+        
+        <div class ="date">15.1.2025 - Other news</div>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+             quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia 
+             deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+              libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+              possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+               rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+        
+    </div>
+    </div>
+    
+    <div class ="social-buttons">
+        <a href="#D"><img src="discord.png" alt ="Discord"></a>
+        <a href="#Twitch"><img src="Twitch.jpg" alt="Twitch"></a>
+    </div>
+
+    <footer id ="footer">
+        <p>© Copyright by Team 7. All rights reserved.</p>
+        <a href="#">About us</a> | <a href="#">Service agreement</a> | <a href="#">Privacy policy</a>
+    </footer>
+</div>
 </body>
+<!-- Sivupalkin skripti-->
+<script>
+    let menu_icon_box =document.querySelector(".menu_icon_box");
+    let box =document.querySelector(".box");
+
+    menu_icon_box.onclick=function(){
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active");
+    }
+    document.onclick = function(e){
+        if(!menu_icon_box.contains(e.target)&& !box.contains(e.target)){
+        menu_icon_box.classList.remove("active");
+        box.classList.remove("active");
+    }
+}
+</script>
 </html>
