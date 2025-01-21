@@ -1,0 +1,360 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-y: scroll;
+}
+body, h1, p, ul, li{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins, sans-serif';
+}
+.box h1 {
+    color: rgba(218, 140, 32, 1);
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+    margin: 30px;
+}
+ul img {
+    width: 75px;
+    margin-left: 20px;
+}
+body{
+    background-image: url("epicbackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Sidebar */
+.box{
+    width: fit-content;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    text-align: left;
+    z-index: 1;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+    border-radius: 0 20px 20px 0;
+    transition: 1s;
+    
+}
+/* Sidebar links */
+.box a:link{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+
+}
+.box a:visited{
+    color:rgb(255, 255, 255);
+}
+.box a:hover{
+    color: green;
+}
+.content{
+    width:100%;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center;
+    
+    
+}
+/* Kun klikataan sivupalkista, ponnahtaa sidebar esiin */
+.active.box{
+    opacity: 0.92;
+    left: 0;
+    pointer-events: fill;
+    transition: 0.4s;
+}
+/* Uutislaatikko */
+.news{
+    max-width: 600px;
+    padding: 20px;
+    max-height: fit-content;
+    background-color: #c9b396;
+    color: #000; 
+    border-radius: 10px;
+    margin-left: 33%;
+}
+/* Uutislaatikon otsikko, erillinen */
+.title{
+    max-width: 600px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(234, 234, 53);
+    background-color: rgba(47, 72, 16, 1);
+    text-align: center;
+    border-radius: 20px 20px 10px 10px;
+    margin-left: 33%;
+    margin-top: 3%;
+}
+
+.news .date{
+    background-color: #E77373;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.social-buttons{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #c9b396;
+    border-radius: 10px;
+}
+.social-buttons a{
+   width: 100%;
+   height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    gap: 10px;
+    
+}
+.social-buttons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+#footer {
+    position: relative;
+    font-size: 12px;
+    align-items: center;
+    background-color: rgba(56, 51, 51, 1);
+    width: 100%;
+    padding: 10px;
+    margin-top: auto;
+    text-align: center;
+}
+
+#footer a {
+    color: #c6c6c6;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 12px;
+}
+#footer p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+p{
+    color: black;
+}
+.menu_icon_box{
+    z-index: 2;
+    width: fit-content;
+    height: auto;
+    background-color: rgba(229, 255, 0, 0.899);
+    margin: 30px;
+    position: fixed;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.line1, .line2, .line3{
+    width: 40px;
+    height: 4px;
+    margin: 10px 8px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 0.2s;
+    
+}
+.active .line1{
+    transform: translate(0px , 15px)rotate(45deg);
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: translate(0px , -15px)rotate(-45deg);
+}
+nav{
+    padding-top: 100px;
+}
+nav ul{
+    margin: 0px 30px;
+
+}
+nav ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    background-color: gray;
+    border-radius: 8px;
+}
+nav ul li a{
+    color:black;
+    font-size: 28px;
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+/* ---------------------MEDIA / PHONE --------------------------- */
+@media screen and (max-width: 800px) {
+    .left, .main, .right{
+        width:100%;
+    }
+    
+    .box{
+        width: 100%;
+        height: 100%;;
+    }
+    .content{
+        max-width: 90%;
+        max-height: 60%;
+        margin-right: 10%;
+    }
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(56, 51, 51, 1);
+        height: 2.5rem;
+        padding: 10px;
+    }
+    
+}
+
+/*---------------------- Monsters page -----------------------*/
+
+.irish-grover-regular {
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#header{
+    font-family: 'Irish Grover';
+    font-size: 46px;
+    top: 0;
+    margin-top: 1%;   
+    color: rgba(255, 235, 15, 1);
+    background-color: rgba(71, 71, 71, 1);
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+}
+ .container1, .container2, .container3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-direction: row;
+    
+    
+    
+}
+.item1, .item2,.item3, .item4, .item5, .item6, .item7, .item8, .item9{
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20px;
+    box-shadow: 0 0 10px 10px black;    
+}
+.item1{
+    background-image: url('mobs/aimob1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item2{
+    background-image: url('mobs/aimob2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item3{
+    background-image: url('mobs/aimob3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item4{
+    background-image: url('mobs/aimob4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item5{
+    background-image: url('mobs/aimob5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item6{
+    background-image: url('mobs/aimob6.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item7{
+    background-image: url('mobs/aimob7.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.item8{
+    background-image: url('mobs/aimob8.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item9{
+    background-image: url('mobs/aidragon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.row{
+    font-family: 'Irish Grover';
+    font-size: 46px;
+    color: rgba(255, 235, 15, 1);
+    background-color: rgba(71, 71, 71, 1);
+    display: flex;
+    margin-top: 2%; 
+    text-align: center;
+    font-weight: 600;
+   
+    
+}
+
+/* Add hover effect */
+.item1:hover, .item2:hover, .item3:hover, 
+.item4:hover, .item5:hover, .item6:hover,
+.item7:hover, .item8:hover, .item9:hover {
+    transform: scale(1.10);
+}
