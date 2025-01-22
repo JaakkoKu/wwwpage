@@ -58,6 +58,9 @@ body{
     transition: 0.3s;
     border-radius: 0 20px 20px 0;
     transition: 1s;
+    overflow-y: scroll;
+    scrollbar-color: rgb(87, 84, 84) black;
+    scrollbar-width: thin;
     
 }
 /* Sidebar links */
@@ -215,6 +218,9 @@ p{
 }
 .active .line3{
     transform: translate(0px , -15px)rotate(-45deg);
+}
+.menu_icon_box:hover{
+    transform: scale(1.07);
 }
 nav{
     padding-top: 100px;
