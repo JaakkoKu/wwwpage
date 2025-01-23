@@ -210,6 +210,8 @@ p{
     transform: translate(0px , 15px)rotate(45deg);
 }
 .active .line2{
+    transform: rotate(1000deg);
+    transition: 1s;
     opacity: 0;
 }
 .active .line3{
