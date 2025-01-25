@@ -41,8 +41,9 @@ ul img {
 body{
     background-image: url("pictures/epicbackground.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
