@@ -277,6 +277,25 @@ nav ul li a{
         align-items: center;
         margin: auto;
     }
+    #Paladin{
+        max-width: 300px;
+        max-height: 300px;
+        font-size: 8px;
+    }
+    .container p{
+        font-size: 18px;
+
+    }
+    #Sorcerer{
+        max-width: 300px;
+        max-height: 300px;
+        font-size: 8px;
+    }
+    .container p{
+        font-size: 18px;
+
+    }
+s
     
     .box{
         width: 100%;
@@ -499,7 +518,7 @@ nav ul li a{
 .row{
     font-size: 46px;
     color: rgba(255, 235, 15, 1);
-    background-color: rgba(71, 71, 71, 1);
+    background-color: rgba(153, 153, 153, 1);
     display: flex;
     border-radius: 3%;
     margin-top: 2%; 
