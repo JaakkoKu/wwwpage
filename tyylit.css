@@ -114,7 +114,7 @@ body{
     background-color: #c9b396;
     color: #000; 
     border-radius: 10px;
-    margin-left: 33%;
+    margin: auto;
 }
 #voctext{
     font-size: 18px;
@@ -128,8 +128,7 @@ body{
     background-color: rgba(47, 72, 16, 1);
     text-align: center;
     border-radius: 20px 20px 10px 10px;
-    margin-left: 33%;
-    margin-top: 3%;
+    margin: auto;
 }
 
 .news .date{
@@ -212,7 +211,7 @@ p{
     z-index: 2;
     width: fit-content;
     height: auto;
-    background-color: rgba(229, 255, 0, 0.899);
+    background-color: rgba(170, 229, 6, 0.899);
     margin: 30px;
     position: fixed;
     border-radius: 4px;
@@ -222,7 +221,7 @@ p{
     width: 40px;
     height: 4px;
     margin: 10px 8px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     transition: 0.2s;
     
@@ -231,8 +230,8 @@ p{
     transform: translate(0px , 15px)rotate(45deg);
 }
 .active .line2{
-    transform: rotate(1000deg);
-    transition: 1s;
+    transform: translateX(10000px) rotate(1000deg);
+    transition: 3s;
     opacity: 0;
 }
 .active .line3{
@@ -290,18 +289,10 @@ nav ul li a{
         max-height: 100%;
         margin-right: 10%;
     }
-    .content .news{
-        margin-right: 25%;
-        width: 70%;
-    }
-    .content .title{
-        margin-right: 25%;
-        width: 70%;
-        margin-top: 20%;
-    }
     .content p{
-        font-size: 12px;
+        font-size: 22px;
     }
+   
     #footer {
         width: 100%;
         background-color: rgba(56, 51, 51, 1);
@@ -368,17 +359,11 @@ nav ul li a{
         max-height: 100%;
         margin-right: 10%;
     }
-    .content .news{
-        margin-right: 25%;
-        width: 70%;
-    }
-    .content .title{
-        margin-right: 25%;
-        width: 70%;
-        margin-top: 20%;
-    }
+   
+   
     .content p{
-        font-size: 12px;
+        font-size: 22px;
+        
     }
     #footer {
         width: 100%;

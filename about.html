@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of 7</title>
+    <link rel ="icon" type="image/x-icon" href ="epicsword.jpg">
+    <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+    
+    <div class="menu_icon_box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>  
+    
+        
+        <div class="box">
+       
+            <nav>
+                <ul>
+                    <a href="index.html"><img src="pictures/epicsword.jpg" alt="epicsword"></a>
+                    <h1>Game of 7</h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="vocations.html">Vocations</a></li>
+                    <li><a href="monsters.html">Monsters</a></li>
+                    <li><a href="quests.html">Quests</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+           
+    
+    <div class ="social-buttons">
+        <a href="#D"><img src="pictures/discord.png" alt ="Discord"></a>
+        <a href="#Twitch"><img src="pictures/Twitch.jpg" alt="Twitch"></a>
+    </div>
+
+    <footer id ="footer">
+        <p>© Copyright by Team 7. All rights reserved.</p>
+        <div class="links">
+        <a href="#">About us</a> | <a href="#">Service agreement</a> | <a href="#">Privacy policy</a>
+    </div>
+    </footer>
+
+</body>
+<!-- Sivupalkin skripti-->
+<script>
+    let menu_icon_box =document.querySelector(".menu_icon_box");
+    let box =document.querySelector(".box");
+
+    menu_icon_box.onclick=function(){
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active");
+    }
+    document.onclick = function(e){
+        if(!menu_icon_box.contains(e.target)&& !box.contains(e.target)){
+        menu_icon_box.classList.remove("active");
+        box.classList.remove("active");
+    }
+}
+</script>
+</html>
