@@ -119,6 +119,15 @@ body{
 #voctext{
     font-size: 18px;
 }
+#voctext a{
+    text-decoration: none;
+    color: red;
+}
+#voctext a:hover{
+    color: yellow;
+    width: 30px;
+    height: 30px;
+}
 /* Uutislaatikon otsikko, erillinen */
 .title{
     max-width: 600px;
@@ -275,6 +284,7 @@ nav ul li a{
         justify-content: center;
         align-items: center;
         margin: auto;
+        font-size: 20px;
     }
     /*--Vocations--*/
     #Paladin{
@@ -291,42 +301,33 @@ nav ul li a{
         max-height: 300px;
         font-size: 8px;
     }
-    .container p{
-        font-size: 18px;
-
-    }
+ 
     #Knight{
         max-width: 300px;
         max-height: 300px;
         font-size: 8px;
-    }
-    .container p{
-        font-size: 18px;
-
-    }
+    } 
     #druid{
         max-width: 300px;
         max-height: 300px;
         font-size: 8px;
     }
-    .container p{
-        font-size: 18px;
-
-    }
     .box{
         width: 100%;
-        height: 120%;
+        height: 100%;
         position: fixed;
         justify-content: center;
         left: -800px;
     }
+    .box a:link{
+        font-size: 16px;
+        margin-top: 5px;
+        height: 20px;
+    }
     .content{
         max-width: 100%;
         max-height: 100%;
-        margin-right: 10%;
-    }
-    .content p{
-        font-size: 22px;
+        margin-top: 10%;
     }
    
     #footer {
