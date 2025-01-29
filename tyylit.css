@@ -63,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* Sidebar */
+/*--------------------------- Sidebar ----------------------------*/
 .box{
     width: 300px;
     height: 100vh;
@@ -102,18 +102,44 @@ body{
 .box a:hover{
     color: green;
 }
-.content{
-    width:100%;
-    padding: 20px;
-    flex-grow: 1;
-    justify-content: center;    
-}
+
 /* Kun klikataan sivupalkista, ponnahtaa sidebar esiin */
 .active.box{
     opacity: 0.92;
     left: 0;
     pointer-events: fill;
     transition: 0.4s;
+}
+nav{
+    padding-top: 100px;
+}
+nav ul{
+    margin: 0px 30px;
+
+}
+nav ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    background-color: gray;
+    border-radius: 8px;
+    
+}
+nav ul li a{
+    color:black;
+    font-size: 28px;
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+}
+/* -----------------Sidebar homma LOPPU------------------------ */
+.content{
+    width:100%;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center;    
 }
 /* Uutislaatikko */
 .news{
@@ -187,13 +213,14 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    
 }
 .social-buttons a img:hover{
     transform: scale(1.7);
     transition: 0.3s;
     filter: drop-shadow(0 0 0.75rem crimson);
 }
+
+/* --------------Footteri ---------------- */
 #footer {
     width: 100%;
     background-color: rgba(56, 51, 51, 1);
@@ -204,17 +231,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
-
 #footer a {
     color: #c6c6c6;
     text-decoration: none;
     margin-right: 10px;
     font-size: 12px;
     text-align: center;
-   
-    
 }
 #footer p {
     color: rgb(255, 255, 255);
@@ -225,9 +248,11 @@ body{
     text-decoration: underline;
     color: white;
 }
+/* ------------Footteri LOPPU ---------------- */
 p{
     color: black;
 }
+/* ----------------------------Sidebaarin menu-boksi (vihreä) --------------------- */
 .menu_icon_box{
     z-index: 2;
     width: fit-content;
@@ -261,30 +286,8 @@ p{
 .menu_icon_box:hover{
     transform: scale(1.07);
 }
-nav{
-    padding-top: 100px;
-}
-nav ul{
-    margin: 0px 30px;
+/* ----------------------------Sidebaarin menu-boksi (vihreä)  LOPPU--------------------- */
 
-}
-nav ul li{
-    list-style: none;
-    margin-bottom: 30px;
-    transition: 0.3s;
-}
-nav ul li:hover{
-    background-color: gray;
-    border-radius: 8px;
-    
-}
-nav ul li a{
-    color:black;
-    font-size: 28px;
-    padding: 10px 30px;
-    display: block;
-    text-decoration: none;
-}
 
 
 
